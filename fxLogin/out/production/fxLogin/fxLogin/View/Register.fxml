@@ -1,0 +1,77 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.PasswordField?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.layout.ColumnConstraints?>
+<?import javafx.scene.layout.GridPane?>
+<?import javafx.scene.layout.Pane?>
+<?import javafx.scene.layout.RowConstraints?>
+<?import javafx.scene.text.Font?>
+
+<GridPane alignment="center" hgap="10" vgap="10" xmlns="http://javafx.com/javafx/11.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="fxLogin.Controller">
+    <columnConstraints>
+        <ColumnConstraints />
+    </columnConstraints>
+    <rowConstraints>
+        <RowConstraints />
+    </rowConstraints>
+    <children>
+        <Pane maxHeight="480.0" maxWidth="430.0" minHeight="480.0" minWidth="430.0" prefHeight="480.0" prefWidth="430.0" style="-fx-border-color: black; -fx-background-color: black;">
+            <children>
+                <Pane layoutX="5.0" layoutY="5.0" prefHeight="470.0" prefWidth="420.0" style="-fx-background-color: #353535; -fx-border-color: #fc9803;">
+                    <children>
+                        <Pane layoutX="391.0" layoutY="7.0" prefHeight="25.0" prefWidth="25.0" style="-fx-background-color: black; -fx-border-color: #fc9803;">
+                            <children>
+                                <Label fx:id="closeLabel" alignment="CENTER" contentDisplay="CENTER" layoutX="-10.0" layoutY="-19.0" maxHeight="65.0" maxWidth="45.0" minHeight="45.0" minWidth="45.0" prefHeight="57.0" prefWidth="45.0" text="x" textFill="WHITE">
+                                    <font>
+                                        <Font size="36.0" />
+                                    </font>
+                                </Label>
+                                <Button fx:id="exitBtn" mnemonicParsing="false" onAction="#exitBtn" opacity="0.0" prefHeight="25.0" prefWidth="25.0" text="Button" />
+                            </children>
+                        </Pane>
+                        <Pane layoutX="356.0" layoutY="7.0" prefHeight="25.0" prefWidth="25.0" style="-fx-background-color: black; -fx-border-color: #fc9803;">
+                            <children>
+                                <Label fx:id="minimizeLabel" alignment="CENTER" contentDisplay="CENTER" layoutX="-10.0" layoutY="-25.0" maxHeight="45.0" maxWidth="45.0" minHeight="36.0" minWidth="45.0" prefHeight="44.0" prefWidth="45.0" text="-" textAlignment="CENTER" textFill="WHITE">
+                                    <font>
+                                        <Font size="48.0" />
+                                    </font>
+                                </Label>
+                                <Button fx:id="minimizeBtn" mnemonicParsing="false" opacity="0.0" prefHeight="25.0" prefWidth="25.0" text="Button" />
+                            </children>
+                        </Pane>
+                        <Label fx:id="loginText" alignment="CENTER" contentDisplay="CENTER" layoutX="113.0" layoutY="32.0" prefHeight="70.0" prefWidth="194.0" text="Register" textFill="WHITE">
+                            <font>
+                                <Font name="System Bold" size="36.0" />
+                            </font>
+                        </Label>
+                        <Label fx:id="usernameLabel" layoutX="74.0" layoutY="133.0" text="Username: " textFill="WHITE">
+                            <font>
+                                <Font name="System Bold" size="12.0" />
+                            </font>
+                        </Label>
+                        <Label fx:id="passwordLabel" layoutX="74.0" layoutY="177.0" text=" Password:" textFill="WHITE">
+                            <font>
+                                <Font name="System Bold" size="12.0" />
+                            </font>
+                        </Label>
+                        <TextField fx:id="usernameInput" layoutX="140.0" layoutY="129.0" style="-fx-border-color: #fc9803; -fx-background-color: #353535; -fx-text-inner-color: white;" />
+                        <PasswordField fx:id="passwordInput" layoutX="140.0" layoutY="173.0" style="-fx-border-color: #fc9803; -fx-background-color: #353535; -fx-text-inner-color: white;" />
+                        <Button fx:id="button1" layoutX="141.0" layoutY="263.0" mnemonicParsing="false" onAction="#registerValidation" prefHeight="25.0" prefWidth="148.0" style="-fx-background-color: #353535; -fx-border-color: #fc9803;" text="Register" textFill="WHITE" />
+                        <TextField fx:id="emailInput" layoutX="140.0" layoutY="214.0" style="-fx-border-color: #fc9803; -fx-background-color: #353535; -fx-text-inner-color: white;" />
+                        <Label fx:id="emailLabel" layoutX="95.0" layoutY="219.0" text="E-mail:" textFill="WHITE">
+                            <font>
+                                <Font name="System Bold" size="12.0" />
+                            </font>
+                        </Label>
+                        <Label layoutX="148.0" layoutY="385.0" text="Already have an account?" textFill="WHITE" />
+                        <Button fx:id="regBtn" layoutX="161.0" layoutY="402.0" mnemonicParsing="false" onAction="#goToLogin" style="-fx-background-color: #353535; -fx-border-color: #353535;" text="Proceed to login!" textFill="#fc9803" />
+                        <Label fx:id="notice" alignment="CENTER" layoutX="115.0" layoutY="301.0" prefHeight="30.0" prefWidth="200.0" textFill="RED" />
+                    </children>
+                </Pane>
+            </children>
+        </Pane>
+    </children>
+</GridPane>
